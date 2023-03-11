@@ -1,141 +1,94 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* estilos da página */
 body {
-  background: url("https://images3.alphacoders.com/995/995141.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: Poppins, sans-serif;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #222;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
-.back {
-  text-align: center;
-  transform-origin: center top;
-  box-shadow: 0 0 5em #4c4091;
-  z-index: 0;
-  width: 80vw;
-  max-width: 800px;
-  background: #2e2757;
-  border-radius: 50px;
-  border: 10px solid #221d40;
-  margin: 150px auto auto auto;
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 20px;
+
 }
-.foto {
-  animation: pisca 2s infinite;
+
+header {
+  background-color: #333;
+  padding: 20px 0;  
+  display: flex;
+  justify-content: center;
 }
-@keyframes pisca {
-  0% {
-    box-shadow: 0 0 1em #e040fb;
-  }
-  50% {
-    box-shadow: 0 0 2em #e040fb;
-  }
-  100% {
-    box-shadow: 0 0 1em #e040fb;
-  }
+
+.nav_1 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
-.foto,
-.cabeca {
-  transition: 300ms ease-in-out;
-  z-index: 1;
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-  height: 50vw;
-  max-height: 256px;
-  max-width: 256px;
-  border-radius: 5000px;
+
+.nav_1 li {
+  margin-right: 20px;
 }
-.cabeca:hover {
-  top: 130px;
-}
-h1 {
+
+.nav_1 a {
   color: white;
-  font-size: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 200ms ease-in-out;
+  padding: 5px;
+  border-radius: 5px;
 }
-h3 {
-  font-size: 30px;
-  color: white;
-  margin-top: 150px;
+
+.nav_1 a:hover {
+  background-color: white;
+  color: black;
 }
-.nomes {
-  text-align: left;
-  padding-left: 20px;
-  color: white;
-  font-size: 15px;
+.nav_2 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
-.titulo {
-  text-align: left;
-  padding-left: 10px;
-  color: white;
-  font-size: 20px;
+
+.nav_2 li {
+  margin-right: 20px;
 }
-.s-titulo {
-  color: white;
-  font-size: 15px;
+
+section h2 {
+  font-size: 24pt;
+  transform: translateY(-100%);
+  margin-top: 180px;
+
 }
-.ft {
+.img_perfil{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 100%;
   transition: 200ms ease-in-out;
   object-fit: cover;
-  width: 20vw;
-  height: 20vw;
-  max-width: 128px;
-  max-height: 128px;
-  min-height: 96px;
-  min-width: 96px;
-  border-radius: 2vw;
-  background-color: #212121;
-}
-.ft:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  border-radius: 1vw;
-  box-shadow: 0 0 1em #4c4091;
-}
-.projeto {
-  align-items: top;
-  padding: 20px;
-  display: flex;
-}
+  top: -100px;
+  float:left;
+  margin-right: 30px;
 
-.obj_Lateral {
-  position: fixed;
-  top: 50%;
-  right: -185px;
-  transition: 200ms ease-in-out;
-  background: url("https://cdn.discordapp.com/attachments/835870529612546060/892855525606293595/sim.png");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  width: 256px;
-  height: 128px;
-  border: none;
 }
-.obj_Lateral:hover {
-  right: 0px;
+.img_fundo{
+  object-fit: cover;
+  width: 100vw;
+  height: 200px;
+
 }
-.redes {
-  width: 20px;
-  height: 20px;
+.txt_sm{
+  font-size: 14pt;
 }
-h4 {
-  text-decoration: none;
-  color: #ffffff;
-  margin-left: 10px;
-  font-size: 12px;
-}
-.redesInsta {
-  margin-top: 15px;
-  margin-left: 80px;
-  align-items: center;
-  display: flex;
-}
-.redesGit {
-  margin-left: 80px;
-  align-items: center;
-  display: flex;
+.icon{
+  width: 40px;
+  height: 40px;
 }
